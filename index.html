@@ -43,6 +43,18 @@
 <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
 
 <link id="pagestyle" href="assets/css/soft-design-system-pro.min3f71.css?v=1.1.1" rel="stylesheet" />
+<style>
+  .line{
+    display: inline-block;
+    width: 75px;
+    height: 5px;
+    background: rgb(255,91,3);
+background: -moz-linear-gradient(90deg, rgba(255,91,3,1) 61%, rgba(255,0,0,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(255,91,3,1) 61%, rgba(255,0,0,1) 100%);
+background: linear-gradient(90deg, rgba(255,91,3,1) 61%, rgba(255,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5b03",endColorstr="#ff0000",GradientType=1);
+  }
+</style>
 <body>
 
 
@@ -88,29 +100,41 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h3 class="fw-bold mb-3">
+            <h3 class="fw-bold">
                 Fill in your details to check your results
-            </h1>
+            </h3>
+            <div class="line mb-3"></div>
         </div>
     </div>
     <div class="mb-3">
 <form action="">
     <div class="row">
-        <div class="col-md-6">
-            <h5 class="lh-0">Email address</h5>
-            <p class="text-sm text-muted lh-0">Please enter your email</p>
-            <input type="email" class="form-control form-control-lg mb-4" placeholder="name">
+        <div class="col-md-6 mb-3">
+            <h5 class="lh-0">First Name</h5>
+            <p class="text-sm text-muted lh-0">You must enter your given name / other name(s) as provided in your test application.</p>
+            <input type="text" class="form-control form-control-lg mb-4" placeholder="First Name">
         </div>
 
-        <div class="col-md-6">
-            <h5 class="lh-0">Reference code</h5>
-            <p class="text-sm text-muted lh-0">Enter the reference code given to you after you applied</p>
-            <input type="password" class="form-control form-control-lg mb-4" placeholder="code">
+        <div class="col-md-6 mb-3">
+            <h5 class="lh-0">Family name</h5>
+            <p class="text-sm text-muted lh-0">If you do not have a family name, please enter a hyphen (-).</p>
+            <input type="text" class="form-control form-control-lg mb-4" placeholder="Family name">
         </div>
+
+        <div class="col-md-6 mb-3">
+          <h5 class="lh-0">Passport number or ID number</h5>
+        
+          <input type="password" class="form-control form-control-lg mb-4" placeholder="code">
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <h5 class="lh-0">Date of birth</h5>
+        
+        <input type="date" class="form-control form-control-lg mb-4" placeholder="Date of birth">
+    </div>
           
-        <div class="col-md-12">
-          <center> <button class="btn btn-lg btn-danger">Get result</button></center>
-        </div>
+        <div class="col-md-4">
+          <button class="btn btn-lg btn-danger">Get result</button>
 
 
 
@@ -120,7 +144,7 @@
 </div>
 </section>
 
-<section class="py-5">
+<!-- <section class="py-5">
 <div class="container">
 <div class="row justify-content-center">
   <div class="col-md-8">
@@ -192,12 +216,18 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
 <section>
     <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Ask IELTS</h3>
+          <div class="line mb-3"></div>
+        </div>
+      </div>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
               <div class="card">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
